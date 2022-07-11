@@ -23,18 +23,17 @@
 - 사물(camera,manage)생성후 정책 연결
 <img src = "https://user-images.githubusercontent.com/76219962/178241042-36064dfb-89e6-4248-be4a-f9a8e584d84e.png" width="600px" height="300px">
 <img src="https://user-images.githubusercontent.com/76219962/178241121-0c342c7a-2cc6-4f35-a5c1-12533ba17745.png" width="600px" height="300px">
-<br/>
+
 - Role 생성 : IAM
 람다에게 접근 권한을 부여하기 위한 role을 생성함 -> rekognition, s3, iot등에 접근권한 부여 
 <img src="https://user-images.githubusercontent.com/76219962/178241462-f7fd1308-901e-44f8-931b-7811c84f269c.png" width="600px" height="300px">
-<br/>
+
 - 람다 생성
 <img src="https://user-images.githubusercontent.com/76219962/178241826-d861b277-d3ce-4525-9d24-c1ec158c9698.png" width="600px" height="400px">
-<br/>
+
 - Rule 생성
 ‘carRecog/request’ 토픽에서 메시지를 읽어오기 위한 Rule(SQL SELECT Clause)을 생성함
 <img src="https://user-images.githubusercontent.com/76219962/178242089-e3891755-106b-483f-8668-8cc18ffec653.png" width="600px" height="300px">
-<br/>
 
 - 트리거 생성
 ‘carRecog/request’ 토픽에 메시지가 들어오면 람다함수를 호출 할 트리거를 추가
@@ -53,10 +52,9 @@ S3에 업로드 된 이미지를 사용해서 Rekognition 진행 후 감지 된 
 이때 데이터베이스에 해당 차량 번호가 있다면 번호 삭제 후 출차 처리, 없다면 차량 번호 등록 후 입차 처리한다.
 
 ### 3. 결과
-- camera.js
+- camera.js<br/>
 <img src="https://user-images.githubusercontent.com/76219962/178243609-295f0106-1806-40d4-a947-0205defcb85f.png" width="600px" height="300px">
-<br/>
-- manage.js
+- manage.js<br/>
 <img src="https://user-images.githubusercontent.com/76219962/178243625-d482bd2a-2a91-45f9-9073-1e6e6c2f81d9.png" width="600px" height="400px">
 
 
