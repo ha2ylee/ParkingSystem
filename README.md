@@ -15,10 +15,10 @@
 <img src="https://user-images.githubusercontent.com/76219962/178237775-dbb801b3-7f07-43af-be2e-c40f82e98054.png" width="600" height="300">
 
 ### 💡 라즈베리파이 환경세팅
-사용 부품 : 라즈베리 파이 3 Model B, 초음파 센서(HC-SR04), 카메라 모듈(Camera V2.1)
-<img src="https://user-images.githubusercontent.com/76219962/178239183-7448a8ae-1f20-49a6-9f24-edcce08592a9.png" width="600" height="300">
+사용 부품 : 라즈베리 파이 3 Model B, 초음파 센서(HC-SR04), 카메라 모듈(Camera V2.1)<br/>
+<img src="https://user-images.githubusercontent.com/76219962/178239183-7448a8ae-1f20-49a6-9f24-edcce08592a9.png" width="600px" height="300px">
 
 ### 💡 프로젝트 구현
 
-- 사물(camera,manage)생성후 정책 연결
-<img src = "https://user-images.githubusercontent.com/76219962/178239377-b8a18af9-ef22-421e-aaf7-91bea9f48d26.png" width="30%" height="30%">
+- 사물(camera,manage)생성후 정책 연결<br/>
+<img src = "https://user-images.githubusercontent.com/76219962/178239377-b8a18af9-ef22-421e-aaf7-91bea9f48d26.png" width="600px" height="300px">
