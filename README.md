@@ -19,7 +19,7 @@
 <img src="https://user-images.githubusercontent.com/76219962/178239183-7448a8ae-1f20-49a6-9f24-edcce08592a9.png" width="600px" height="600px">
 
 # 💡 프로젝트 구현
-### 1.AWS 세팅
+### 1. AWS 세팅
 - 사물(camera,manage)생성후 정책 연결<br/>
 <img src = "https://user-images.githubusercontent.com/76219962/178241042-36064dfb-89e6-4248-be4a-f9a8e584d84e.png" width="600px" height="300px">
 <img src="https://user-images.githubusercontent.com/76219962/178241121-0c342c7a-2cc6-4f35-a5c1-12533ba17745.png" width="600px" height="300px">
@@ -36,3 +36,28 @@
 <br/>
 <img src="https://user-images.githubusercontent.com/76219962/178242089-e3891755-106b-483f-8668-8cc18ffec653.png" width="600px" height="300px">
 <br/>
+
+- 트리거 생성<br/>
+‘carRecog/request’ 토픽에 메시지가 들어오면 람다함수를 호출 할 트리거를 추가
+<img src="https://user-images.githubusercontent.com/76219962/178243117-ceea0099-9f22-4bc6-9df2-8a2c59100d59.png" width="600px" height="300px">
+
+<br/>
+### 2. 코드 
+
+- camera.js :
+라즈베리 파이의 초음파 센서로 차량과의 거리를 측정하여 20cm 이내가 되면 카메라 모듈로 번호판을 촬영한다. 촬영 된 이미지는 S3의 버킷으로 올라가며 이때 ‘carRecog/request’ 토픽으로 ‘carRecog/detect/car’라는 토픽명과 이미지 파일명을 publish한다. 
+<br/>
+- index.js : 
+camera.js에서 ‘carRecog/request’ 토픽으로 Publish한 메시지가 들어오면 SQL SELECT Clause로 모든 값을 읽고, 트리거를 통해 람다 함수를 호출한다.
+S3에 업로드 된 이미지를 사용해서 Rekognition 진행 후 감지 된 텍스트를 ‘carRecog/detect/car’ 토픽으로 publish한다.
+<br/>
+- manage.js :
+‘carRecog/detect/car’ 토픽을 subscribe하고 있다가 람다 함수가 publish한 메시지가 토픽에 들어오면 메시지에서 차량 번호를 읽어 데이터베이스와 비교한다. 이때 데이터베이스에 해당 차량 번호가 있다면 번호 삭제 후 출차 처리, 없다면 차량 번호 등록 후 입차 처리한다.
+
+### 3. 결과
+- camera.js
+<img src="https://user-images.githubusercontent.com/76219962/178243609-295f0106-1806-40d4-a947-0205defcb85f.png" width="600px" height="300px">
+- manage.js
+<img src="https://user-images.githubusercontent.com/76219962/178243625-d482bd2a-2a91-45f9-9073-1e6e6c2f81d9.png" width="600px" height="400px">
+
+
