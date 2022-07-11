@@ -21,4 +21,4 @@
 ### 💡 프로젝트 구현
 
 - 사물(camera,manage)생성후 정책 연결
-![image](https://user-images.githubusercontent.com/76219962/178239377-b8a18af9-ef22-421e-aaf7-91bea9f48d26.png){ width="600" height="300"}
+<img src = "https://user-images.githubusercontent.com/76219962/178239377-b8a18af9-ef22-421e-aaf7-91bea9f48d26.png" width="30%" height="30%">
