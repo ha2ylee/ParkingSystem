@@ -15,4 +15,7 @@
 <img src="https://user-images.githubusercontent.com/76219962/178237775-dbb801b3-7f07-43af-be2e-c40f82e98054.png"  width="600" height="300">
 
 ### 💡 라즈베리파이 환경세팅
-<img src="https://user-images.githubusercontent.com/76219962/178238057-da21f20b-d567-465c-8a6e-7a75f3f13c49.png"  width="600" height="300">
+사용 부품 : 라즈베리 파이 3 Model B, 초음파 센서(HC-SR04), 카메라 모듈(Camera V2.1)
+
+### 💡 프로젝트 구현
+
