@@ -38,7 +38,8 @@
 - 트리거 생성
 ‘carRecog/request’ 토픽에 메시지가 들어오면 람다함수를 호출 할 트리거를 추가
 <img src="https://user-images.githubusercontent.com/76219962/178243117-ceea0099-9f22-4bc6-9df2-8a2c59100d59.png" width="600px" height="300px">
-
+<br/>
+<br/>
 ### 2. 코드 
 
 - camera.js :
@@ -52,9 +53,10 @@ S3에 업로드 된 이미지를 사용해서 Rekognition 진행 후 감지 된 
 이때 데이터베이스에 해당 차량 번호가 있다면 번호 삭제 후 출차 처리, 없다면 차량 번호 등록 후 입차 처리한다.
 
 ### 3. 결과
-- camera.js<br/>
+- camera.js
 <img src="https://user-images.githubusercontent.com/76219962/178243609-295f0106-1806-40d4-a947-0205defcb85f.png" width="600px" height="300px">
-- manage.js<br/>
-<img src="https://user-images.githubusercontent.com/76219962/178243625-d482bd2a-2a91-45f9-9073-1e6e6c2f81d9.png" width="600px" height="400px">
+
+- manage.js
+<img src="https://user-images.githubusercontent.com/76219962/178243625-d482bd2a-2a91-45f9-9073-1e6e6c2f81d9.png" width="500px" height="300px">
 
 
