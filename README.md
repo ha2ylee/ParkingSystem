@@ -1,7 +1,7 @@
 # AWS를 이용한 주차관리시스템
 <br/>
 
-### 💡 프로젝트 소개
+# 💡 프로젝트 소개
 본 프로젝트는 <클라우드IoT서비스>에서 진행한 프로젝트입니다.
 
 1) 초음파 센서를 이용하여 다가오는 차량을 감지하고 카메라 모듈을 이용하여 차량의 번호판을 촬영한 후 이미지로 S3 버킷에 저장
@@ -10,28 +10,28 @@
 
 3) 추출된 텍스트를 데이터베이스와 비교하여 같은 번호가 존재하면 출차, 없으면 입차 처리
 
-### 💡 시스템 구성도
+# 💡 시스템 구성도
 
 <img src="https://user-images.githubusercontent.com/76219962/178237775-dbb801b3-7f07-43af-be2e-c40f82e98054.png" width="600px" height="300px">
 
-### 💡 라즈베리파이 환경세팅
+# 💡 라즈베리파이 환경세팅
 사용 부품 : 라즈베리 파이 3 Model B, 초음파 센서(HC-SR04), 카메라 모듈(Camera V2.1)<br/>
 <img src="https://user-images.githubusercontent.com/76219962/178239183-7448a8ae-1f20-49a6-9f24-edcce08592a9.png" width="600px" height="600px">
 
-### 💡 프로젝트 구현
-
+# 💡 프로젝트 구현
+### AWS 세팅
 - 사물(camera,manage)생성후 정책 연결<br/>
 <img src = "https://user-images.githubusercontent.com/76219962/178241042-36064dfb-89e6-4248-be4a-f9a8e584d84e.png" width="600px" height="300px">
 <img src="https://user-images.githubusercontent.com/76219962/178241121-0c342c7a-2cc6-4f35-a5c1-12533ba17745.png" width="600px" height="300px">
-
+<br/>
 - Role 생성 : IAM<br/>
 람다에게 접근 권한을 부여하기 위한 role을 생성함 -> rekognition, s3, iot등에 접근권한 부여 
 <img src="https://user-images.githubusercontent.com/76219962/178241462-f7fd1308-901e-44f8-931b-7811c84f269c.png" width="600px" height="300px">
-
+<br/>
 - 람다 생성<br/>
 <img src="https://user-images.githubusercontent.com/76219962/178241826-d861b277-d3ce-4525-9d24-c1ec158c9698.png" width="600px" height="300px">
-
+<br/>
 - Rule 생성<br/>
 ‘carRecog/request’ 토픽에서 메시지를 읽어오기 위한 Rule(SQL SELECT Clause)을 생성함<br/>
 <img src="https://user-images.githubusercontent.com/76219962/178242089-e3891755-106b-483f-8668-8cc18ffec653.png" width="600px" height="300px">
-
+<br/>
