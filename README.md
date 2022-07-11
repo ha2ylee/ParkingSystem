@@ -32,6 +32,7 @@
 <img src="https://user-images.githubusercontent.com/76219962/178241826-d861b277-d3ce-4525-9d24-c1ec158c9698.png" width="600px" height="300px">
 <br/>
 - Rule 생성<br/>
-‘carRecog/request’ 토픽에서 메시지를 읽어오기 위한 Rule(SQL SELECT Clause)을 생성함<br/>
+‘carRecog/request’ 토픽에서 메시지를 읽어오기 위한 Rule(SQL SELECT Clause)을 생성함
+<br/>
 <img src="https://user-images.githubusercontent.com/76219962/178242089-e3891755-106b-483f-8668-8cc18ffec653.png" width="600px" height="300px">
 <br/>
