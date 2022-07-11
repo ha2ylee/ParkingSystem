@@ -24,3 +24,8 @@
 <img src = "https://user-images.githubusercontent.com/76219962/178241042-36064dfb-89e6-4248-be4a-f9a8e584d84e.png" width="600px" height="300px">
 <img src="https://user-images.githubusercontent.com/76219962/178241121-0c342c7a-2cc6-4f35-a5c1-12533ba17745.png" width="600px" height="300px">
 
+- Roles 생성 : IAM<br/>
+람다에게 접근 권한을 부여하기 위한 role을 생성함 -> rekognition, s3, iot 접근권한 부여 
+<img src="https://user-images.githubusercontent.com/76219962/178241462-f7fd1308-901e-44f8-931b-7811c84f269c.png" width="600px" height="300px">
+
+
