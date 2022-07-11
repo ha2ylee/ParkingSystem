@@ -19,7 +19,7 @@
 <img src="https://user-images.githubusercontent.com/76219962/178239183-7448a8ae-1f20-49a6-9f24-edcce08592a9.png" width="600px" height="600px">
 
 # 💡 프로젝트 구현
-### AWS 세팅
+### 1.AWS 세팅
 - 사물(camera,manage)생성후 정책 연결<br/>
 <img src = "https://user-images.githubusercontent.com/76219962/178241042-36064dfb-89e6-4248-be4a-f9a8e584d84e.png" width="600px" height="300px">
 <img src="https://user-images.githubusercontent.com/76219962/178241121-0c342c7a-2cc6-4f35-a5c1-12533ba17745.png" width="600px" height="300px">
@@ -29,7 +29,7 @@
 <img src="https://user-images.githubusercontent.com/76219962/178241462-f7fd1308-901e-44f8-931b-7811c84f269c.png" width="600px" height="300px">
 <br/>
 - 람다 생성<br/>
-<img src="https://user-images.githubusercontent.com/76219962/178241826-d861b277-d3ce-4525-9d24-c1ec158c9698.png" width="600px" height="300px">
+<img src="https://user-images.githubusercontent.com/76219962/178241826-d861b277-d3ce-4525-9d24-c1ec158c9698.png" width="600px" height="400px">
 <br/>
 - Rule 생성<br/>
 ‘carRecog/request’ 토픽에서 메시지를 읽어오기 위한 Rule(SQL SELECT Clause)을 생성함
